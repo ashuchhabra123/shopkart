@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopkart- The Shoe Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color:lightblue;
+            color: black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Shopkart- The Shoe Store</h1>
+    </header>
+
+    <nav>
+        <input type="text" placeholder="Search products">
+        <button>Search</button>
+    </nav>
+    <img src="https://media.gq.com/photos/646fdd946cbe43aa644cd88b/16:9/w_1600,c_limit/shoes-art.jpg" alt="Shoes for Men" height="10%"; width="100%;" style="img-align:center;">
+    <div class="product-container">
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVucyUyMHNob2VzfGVufDB8fDB8fHww" alt="Product 1">
+            <h3>Red and White Nike Free runs</h3>
+            <p>Price:Rs 1399</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="data:image/jpeg;base64,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" alt="Product 2">
+            <h3>Campus Men's Rake Off White Running Shoes</h3>
+            <p>Price:Rs 999</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://www.jiomart.com/images/product/original/rv2dcclzkn/brown-fox-brown-fox-stylish-attractive-snekaers-shoes-for-man-s-boy-s-sneakers-for-men-white-product-images-rv2dcclzkn-0-202209241601.jpg?im=Resize=(500,630)" alt="Product 3">
+            <h3>White Sneakers For Men</h3>
+            <p>Price:Rs 659</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-77978,resizemode-75,msid-95892008/top-trending-products/lifestyle/check-out-casual-shoes-for-men-in-india.jpg" alt="Product 4">
+            <h3>Black Casual Shoes For Men</h3>
+            <p>Price:Rs 1099</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Add more products as needed -->
+
+    </div>
+
+    <footer>
+        &copy; 2023 Shopkart. All rights reserved. Owner- Rahul Narula & Aman Phutela
+    </footer>
+
+</body>
+</html>
